@@ -1,15 +1,26 @@
 {
-  "name": "notion-cms",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-notion-blog",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "next": "9.5.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.12.0",
+    "react-notion": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "gh-pages": "^3.1.0",
+    "typescript": "3.7.3"
+  },
+  "homepage": "http://ctrlsk.github.io/shashank_work",
+  "license": "MIT"
 }
