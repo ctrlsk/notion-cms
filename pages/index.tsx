@@ -55,7 +55,6 @@ function HomePage({ posts }: { posts: Post[] }) {
           <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
             <a>
               <b>{post.title}</b>
-              <div className="sub">{post.description}</div>
               <div className="sub">posted on {post.date}</div>
             </a>
           </Link>
