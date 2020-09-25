@@ -1,7 +1,7 @@
 {
   "name": "react-notion-blog",
   "version": "1.0.0",
-  "homepage": "https://ctrlsk.github.io/notion-cms/",
+  "homepage": "https://ctrlsk.github.io/website-cms/",
   "scripts": {
     "dev": "next",
     "build": "next build",
