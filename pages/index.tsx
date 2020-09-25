@@ -52,7 +52,7 @@ function HomePage({ posts }: { posts: Post[] }) {
       <h1>Posts</h1>
       <div>
         {posts.map((post) => (
-          <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
+          <Link href="/blog/[slug]" as={'/blog/${post.slug}'}>
             <a>
               <b>{post.title}</b>
               <div className="sub">posted on {post.date}</div>
