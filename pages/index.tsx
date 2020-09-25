@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Spacer } from "./lib/spacer";
 
 const NOTION_BLOG_ID =
   process.env.NOTION_BLOG_ID || "e96723d2a2614b6d9bdf0507436361d9";
