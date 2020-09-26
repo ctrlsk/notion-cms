@@ -50,8 +50,7 @@ function HomePage({ posts }: { posts: Post[] }) {
         </div>
         
       </div>
-      <h1>Posts</h1>
-      
+            
       <div className="blog">
         {posts.map((post) => (
           <div className="blogposts">
