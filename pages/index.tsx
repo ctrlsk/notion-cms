@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 const NOTION_BLOG_ID =
   process.env.NOTION_BLOG_ID || "e96723d2a2614b6d9bdf0507436361d9";
 
@@ -24,6 +23,8 @@ export async function getStaticProps() {
 function HomePage({ posts }: { posts: Post[] }) {
   return (
     <div className="content">
+      
+  
       <div className="header">
         <h1>
           <a href="#">
