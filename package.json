@@ -4,8 +4,8 @@
   "homepage": "https://shashank.work/",
   "scripts": {
     "dev": "next",
-    "build": "next build, react-scripts build",
-    "start": "next start, react-scripts start",
+    "build": "next build",
+    "start": "next start",
     "predeploy": "yarn build",
     "deploy": "gh-pages-deploy"
   },
