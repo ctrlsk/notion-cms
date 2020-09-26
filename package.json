@@ -1,7 +1,11 @@
 {
   "name": "shashank-work",
   "version": "1.0.0",
+<<<<<<< HEAD
   "homepage": "https://shashank.work",
+=======
+  "homepage": "https://shashank.work/",
+>>>>>>> 2c49a3baea0aa95415fb52bb1f57fc5280df80b0
   "scripts": {
     "dev": "next",
     "build": "next build",
