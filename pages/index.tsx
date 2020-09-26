@@ -3,7 +3,7 @@ import Link from "next/link";
 const NOTION_BLOG_ID =
   process.env.NOTION_BLOG_ID || "e96723d2a2614b6d9bdf0507436361d9";
 
-export type Post = { id: string; slug: string; title: string; date: string };
+export type Post = { id: string; slug: string; title: string; date: string; description: string; tag: string; };
 
 export const getAllPosts = async (): Promise<Post[]> => {
   return await fetch(
@@ -18,7 +18,7 @@ export async function getStaticProps() {
       posts,
     },
   };
-}
+  }
 
 function HomePage({ posts }: { posts: Post[] }) {
   return (
@@ -50,17 +50,22 @@ function HomePage({ posts }: { posts: Post[] }) {
         
       </div>
       <h1>Posts</h1>
-      <div>
+      
+      <div className="blog">
         {posts.map((post) => (
-          <Link href="/blog/[slug]" as={'/blog/${post.slug}'}>
-            <a>
-              <b>{post.title}</b>
-              <div className="sub">posted on {post.date}</div>
+          <div className="blogposts">
+              <div className="postTag">{post.tag}</div>
+              <p className="postTitle">{post.title}</p>
+              <p className="postDescription">{post.description}</p>
+            <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
+            <a className="readMore">
+              Read more &#10230;  
             </a>
           </Link>
+          </div>
         ))}
       </div>
-    </div>
+      </div>   
   );
 }
 
