@@ -1,7 +1,7 @@
 {
   "name": "shashank-work",
   "version": "1.0.0",
-  "homepage": "https://ctrlsk.github.io/website-cms/",
+  "homepage": "https://shashank.work/",
   "scripts": {
     "dev": "next",
     "build": "next build, react-scripts build",
