@@ -1,0 +1,30 @@
+{
+  "name": "shashank-work",
+  "version": "1.0.0",
+  "homepage": "https://ctrlsk.github.io/website-cms/",
+  "scripts": {
+    "dev": "next",
+    "build": "next build, react-scripts build",
+    "start": "next start, react-scripts start",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages-deploy"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "mkdirp": "^1.0.4",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.12.0",
+    "react-notion": "^0.8.0",
+    "save-dev": "^0.0.1-security",
+    "yarn": "^1.22.5"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "gh-pages-deploy": "^0.5.1",
+    "typescript": "3.7.3"
+  },
+  "license": "MIT"
+}
