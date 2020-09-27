@@ -63,7 +63,7 @@ function HomePage({ posts }: { posts: Post[] }) {
               position: relative;
               background-size: cover;
               background-position: center;
-              background-image: url(${post.cover});
+              background-image: url(${post.cover}?tr=w-300,h-100,fo-auto);
             `}</style>
             </div>
               <div className="postTag">{post.tag}</div>
