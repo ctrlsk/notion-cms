@@ -70,6 +70,7 @@ a:hover {
 .aboutme {
   width: 75%;
   margin: auto;
+  margin-bottom: 50px;
   display: flex;
   flex-basis: content;
   align-items: center;
@@ -111,7 +112,8 @@ a:hover {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  justify-items: left;
 }
 
 .blogposts {
@@ -119,7 +121,7 @@ a:hover {
   border: 1px solid #dadada;
   border-radius: 5px;
   height: auto;
-  width: 47%;
+  width: 300px;
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 10px;
@@ -132,10 +134,17 @@ a:hover {
   .blogposts {
     width: 100%;
   }
+  ul {
+    display: none;
+  }
 }
 
 .postTag {
-  display: inline-flex;
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: -77px;
+  right: 5px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 2px;
@@ -153,6 +162,8 @@ a:hover {
   color: #555555;
   font-size: 17px;
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .postDescription {

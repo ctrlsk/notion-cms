@@ -3,7 +3,7 @@ import Link from "next/link";
 const NOTION_BLOG_ID =
   process.env.NOTION_BLOG_ID || "e96723d2a2614b6d9bdf0507436361d9";
 
-export type Post = { id: string; slug: string; title: string; date: string; description: string; tag: string; };
+export type Post = { id: string; slug: string; title: string; date: string; description: string; tag: string; cover: string; };
 
 export const getAllPosts = async (): Promise<Post[]> => {
   return await fetch(
@@ -55,6 +55,17 @@ function HomePage({ posts }: { posts: Post[] }) {
       <div className="blog">
         {posts.map((post) => (
           <div className="blogposts">
+            <div className="postBG">
+            <style jsx>{`display: block;
+              display: block;
+              height: 100px;
+              margin: -10px;
+              position: relative;
+              background-size: cover;
+              background-position: center;
+              background-image: url(${post.cover});
+            `}</style>
+            </div>
               <div className="postTag">{post.tag}</div>
               <p className="postTitle">{post.title}</p>
               <p className="postDescription">{post.description}</p>
