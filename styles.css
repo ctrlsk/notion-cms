@@ -41,7 +41,7 @@ a:hover {
         display: block;
         width: 133px;
         height: 23px;
-        background:url(./images/logo.png);
+        background:url(https://ik.imagekit.io/shashank/logo_7i5w1gJgfV.png?tr=w-133,h-33,f0-auto);
       }
 
       span {
@@ -102,7 +102,7 @@ a:hover {
   display: flex;
   width: 133px;
   height: 133px;
-  background:url(./images/avatar.png);
+  background:url(https://ik.imagekit.io/shashank/avatar_c73EiPT2W.png);
   background-repeat: no-repeat;
   background-position: center;
   flex: 0 0 133px;
